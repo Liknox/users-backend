@@ -8,7 +8,7 @@ const mongoose = require("mongoose")
 const app = new Application()
 
 app.use(jsonParser)
-app.use(parseUrl("http://localhost:5000"))
+app.use(parseUrl(`http://localhost:${PORT}`))
 
 app.addRouter(userRouter)
 
